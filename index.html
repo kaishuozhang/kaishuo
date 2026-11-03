@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Kaishuo Zhang, a penultimate-year Mathematical Sciences student at the University of Leeds.">
+  <title>Kaishuo Zhang | Mathematics & Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">KZ</span>Kaishuo Zhang</a>
+      <button class="theme-toggle" type="button" aria-pressed="false">☾ Night study</button>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="achievements.html">Awards</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div>
+        <p class="eyebrow">Mathematics · Data · Optimisation</p>
+        <h1>Turning rigorous thinking into practical work.</h1>
+        <p class="lead">I am Kaishuo Zhang, a penultimate-year Mathematical Sciences undergraduate at the University of Leeds, building towards work in data analysis, AI algorithms and optimisation.</p>
+        <p class="availability">Seeking internship opportunities in China and the UK</p>
+        <div class="button-row">
+          <a class="button" href="profile.html">Read my profile</a>
+          <a class="button secondary" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+      <aside class="portrait" aria-label="Kaishuo Zhang's cat, the chief debugging companion">
+        <img class="cat-photo" src="chief-debugger-cat.jpg" alt="A blue-eyed cat looking up at the camera">
+        <span class="cat-sticker">Chief Debugging Companion</span>
+        <p class="portrait-caption">University of Leeds<span>Mathematical Sciences · BSc</span></p>
+      </aside>
+    </section>
+
+    <section class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">At a glance</p>
+        <h2>A foundation in mathematics, computation and people.</h2>
+        <p>My academic training is paired with project delivery, public speaking and team coordination experience.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="card-number">01</div><h3>Analytical toolkit</h3><p>Python, R, LaTeX and Excel, supported by training in mathematical analysis, probability and optimisation.</p></article>
+        <article class="card"><div class="card-number">02</div><h3>Applied experience</h3><p>Study-tour programme delivery, mathematics tutoring and business analysis coaching.</p></article>
+        <article class="card"><div class="card-number">03</div><h3>Currently learning</h3><p>Google Data Analytics Professional Certificate, with a focus on data cleaning, analysis and visualisation.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell" aria-labelledby="cat-lab-title">
+      <div class="cat-lab">
+        <div class="section-heading">
+          <p class="eyebrow">Cat-approved workflow</p>
+          <h2 id="cat-lab-title">A small career compass, reviewed by the chief.</h2>
+          <p>Click for a short reminder from the household’s least technical but most persuasive adviser.</p>
+          <div class="button-row"><button class="button" id="cat-tip" type="button">Ask for a data tip</button></div>
+        </div>
+        <div class="tip-display" aria-live="polite">
+          <span class="tip-label">Chief Debugging Companion says</span>
+          <p id="cat-tip-text">“Click the button. I have strong opinions about tidy data.”</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="year"></span> Kaishuo Zhang</span><span>Mathematics · Data · Optimisation</span></div></footer>
+  <script src="site.js"></script><script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
